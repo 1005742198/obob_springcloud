@@ -1,0 +1,9 @@
+1、安装maven
+2、在命令控制台执行 mvn deploy命令即可发布pom文件; 
+      发布 release 版本用下面的命令
+      mvn -f pom.release.xml deploy
+
+注意：每次发布 release pom 都必须增加版本号，不要覆盖原版本的pom。
+
+3、如果发布为SNAPSHOT类型的pom文件，在pom.xml中发布的version必须是以SNAPSHOT结尾 如：  <version>0.0.1-SNAPSHOT</version>
+4、如果发布为RELEASE类型的pom文件，在pom.xml中发布的version必须是以RELEASE结尾 如： <version>0.0.1-RELEASE</version>
